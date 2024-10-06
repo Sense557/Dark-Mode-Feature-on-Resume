@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h2>Logo</h2>
+            <div class="nav-part2">
+                <h4>HOME</h4>
+                <h4>ABOUT</h4>
+                <h4>PORTFOLIO</h4>
+                <h4>SERVICES</h4>
+                <h4>HIRE ME</h4>
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h1>I'm <span>Shakti</span> Meher</h1>
+                <p>This is my official portfolio website to showcase my all works related to web development and all UI design.</p>
+                <a href="files/cv.pdf" download="Shakti_Meher_CV" class="download-btn">Download CV</a>
+            </div>
+            <div class="right">
+                <div class="image-container">
+                    <img src="images/person1.png" alt="Person Image" id="personImage">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to toggle dark mode
+        document.getElementById('darkModeToggle').addEventListener('change', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
